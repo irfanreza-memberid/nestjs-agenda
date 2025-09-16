@@ -1,3 +1,6 @@
+202509161606
+- Added an exports map so bundlers resolve the dist entry.
+
 202509161413
 - Adjusted Agenda e2e sample to send structured job data so Agenda v5 type checks succeed during execution.
 - Verified vitest suite post-fix; attempted pnpm test:e2e but it still only boots the Nest app and needs a manual stop.
