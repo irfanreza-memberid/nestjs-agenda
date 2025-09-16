@@ -5,6 +5,6 @@ import { AgendaService } from '../../lib';
 export class AppService {
   constructor(private readonly agendaService: AgendaService) {}
   async repeatAfterMe() {
-    await this.agendaService.now('repeatAfterMe', 'Goodbye world!');
+    await this.agendaService.now('repeatAfterMe', { message: 'Goodbye world!' });
   }
 }
