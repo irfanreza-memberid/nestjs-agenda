@@ -1,30 +1,39 @@
 {
-  "name": "@agent-ly/nestjs-agenda",
+  "name": "@irfanreza-memberid/nestjs-agenda",
   "version": "2.0.3",
   "description": "An opioninated agenda module for Nestjs",
-  "repository": "https://github.com/agent-ly/nestjs-agenda.git",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
-  },
   "keywords": [
     "nestjs",
     "nest",
     "agenda",
     "mongodb"
   ],
+  "homepage": "https://github.com/agent-ly/nestjs-agenda#readme",
+  "bugs": {
+    "url": "https://github.com/agent-ly/nestjs-agenda/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agent-ly/nestjs-agenda.git"
+  },
+  "license": "MIT",
+  "author": "Irfan Reza",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
   "scripts": {
     "test": "vitest",
     "test:e2e": "tsnd test/src/main.ts",
@@ -56,5 +65,9 @@
     "@nestjs/core": "^11.0.0",
     "agenda": "^5.0.0",
     "reflect-metadata": "^0.2.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
